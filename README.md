@@ -33,3 +33,14 @@ Things you may want to cover:
 ### Association
 - has_many :users_groups
 - has_many :groups
+
+
+## users_groups テーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group

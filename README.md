@@ -55,3 +55,14 @@ Things you may want to cover:
 ### Association
 - has_many :users_groups
 - has_many :users
+
+## posts テーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text|null: false|
+|image|text||
+|user_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :group

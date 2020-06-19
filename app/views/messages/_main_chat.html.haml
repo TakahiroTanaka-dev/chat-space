@@ -11,7 +11,7 @@
         
     .main-chat__upper__right
       %a{href: '#', class: 'main-chat__upper__right__edit'}
-        edit
+        Edit
   .main-chat__center
     .main-chat__center__box
       .main-chat__center__box__info
@@ -23,3 +23,11 @@
         .main-chat__center__box__message__content
           aaa
   .main-chat__bottom
+    %form.main-chat__bottom__form
+      .main-chat__bottom__form__contents
+        %input.main-chat__bottom__form__contents__text{type: "text", placeholder: "type a message"}
+        %label.main-chat__bottom__form__contents__image
+          =icon('far', 'image', class: 'main-chat__bottom__form__contents__image__icon')
+          %input.main-chat__bottom__form__contents__image__hidden{type: "file"}
+      .main-chat__bottom__form__submit 
+        %input.main-chat__bottom__form__submit__btn{type: "submit", value: "Send"}

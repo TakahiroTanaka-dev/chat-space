@@ -2,9 +2,9 @@
   .side-bar__upper
     .top-items
       .top-items__name
-        %h3 masa
+        = current_user.name
       .top-items__icon
-        = link_to "#", class: "top-items__icon--edit" do
+        = link_to edit_user_path(current_user), class: "top-items__icon--edit" do
           = icon('far', 'edit')
         = link_to "#", class: "top-items__icon--cog" do
           = icon('fa', 'cog')
@@ -14,3 +14,5 @@
         techcamp
       .top-logo__right
         まだメッセージはありません
+
+-# "edit_user_path", class: "top-items__icon--edit"

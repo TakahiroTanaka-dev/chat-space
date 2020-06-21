@@ -7,66 +7,61 @@
   height: 100vh;
 }
 
-.side-bar {
+.SideBar{
+  color: #fff;
   width: 300px;
+}
+
+.LeftHeader{
+  background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &__List{
+    height: 20px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    &__useName {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__iconList{
+      display: flex;
+      justify-content: end;
+      &__icon{
+        margin-left: 5px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.fas{
+  color: #fff;
+}
+
+.GroupList{
   background-color: #2f3e51;
-  &__upper {
-    height: 100px;
-    background-color: #253141;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-  &__bottom {
-    background-color: #2f3e51;
-    height: calc(100vh - 100px);
-    padding: 0 20px;
-  }
-    
-  }
-}
-
-.top-items{
-  width: 260px;
-  height: 20px;
-  margin: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  &__name {
-    color: #ffffff;
-    font-size: 16px;
-  }
-  &__icon {
-    width: 60px;
-    &--edit {
-      color: #ffffff;
-      padding-left: 5px;
-      text-decoration: none;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  &__Group{
+    padding: 20px 0 40px;
+    &__name{
+      font-size: 15px;
     }
-    &--cog {
-      color: #ffffff;
-      text-decoration: none;
+    &__message{
+      font-size: 11px;
+      margin-top: 5px;
     }
   }
+  
 }
 
-.top-logo {
-  height: 60px;
-  color: #ffffff;
-  display: flex;
-  align-items: left;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-top: 20px;
-  &__left {
-    font-size: 15px;
-    
-  }
-  &__right {
-    font-size: 11px;
-    margin-top: 5px
-    ;
-  }
+.Link{
+  color: #fff;
+  text-decoration: none;
 }
 
 .main-chat {

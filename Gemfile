@@ -58,3 +58,13 @@ gem "haml-rails", ">= 1.0", '<= 2.0.1'
 
 # font-awesome install
 gem 'font-awesome-sass'
+
+# devise install
+gem 'devise'
+
+# pry-rails install
+gem 'pry-rails'
+
+# ImageUplodare install
+gem 'carrierwave'
+gem 'mini_magick'

@@ -64,3 +64,7 @@ gem 'devise'
 
 # pry-rails install
 gem 'pry-rails'
+
+# ImageUplodare install
+gem 'carrierwave'
+gem 'mini_magick'

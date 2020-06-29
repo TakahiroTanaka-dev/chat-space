@@ -58,5 +58,8 @@ function buildHTML(message){
       $('.main-chat__bottom__form__submit__btn').prop("disabled", false);
       $('form')[0].reset();
     })
+    .fail(function(){
+      alert("メッセージ送信に失敗しました");
+    })
   });
 });

@@ -51,7 +51,6 @@ function buildHTML(message){
       contentType: false
     })
     .done(function(data){
-      console.log(data)
       let html=buildHTML(data);
       $('.main-chat__center').append(html);
       $('.main-chat__center').animate({scrollTop: $('.main-chat__center')[0].scrollHeight});

@@ -53,8 +53,9 @@ function buildHTML(message){
     .done(function(data){
       console.log(data)
       let html=buildHTML(data);
-      console.log(html);
       $('.main-chat__center').append(html);
+      $('.main-chat__center').animate({scrollTop: $('.main-chat__center')[0].scrollHeight});
+      $('.main-chat__bottom__form__submit__btn').prop("disabled", false);
       $('form')[0].reset();
     })
   });

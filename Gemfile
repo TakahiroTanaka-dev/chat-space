@@ -72,3 +72,5 @@ gem 'pry-rails'
 # ImageUplodare install
 gem 'carrierwave'
 gem 'mini_magick'
+# Jquery install
+gem 'jquery-rails'

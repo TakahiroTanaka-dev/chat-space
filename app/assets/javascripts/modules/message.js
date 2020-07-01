@@ -1,7 +1,7 @@
 $(function(){
 function buildHTML(message){
   if (message.image){
-    let html=`<div class="main-chat__center__box">
+    let html=`<div class="main-chat__center__box" data-message-id=${message.id}>
                 <div class="main-chat__center__box__info">
                   <div class="main-chat__center__box__info__user">
                     ${message.user_name}
@@ -19,7 +19,7 @@ function buildHTML(message){
               </div>`
               return html;
   } else{
-    let html=`<div class="main-chat__center__box">
+    let html=`<div class="main-chat__center__box" data-message-id=${message.id}>
                 <div class="main-chat__center__box__info">
                   <div class="main-chat__center__box__info__user">
                     ${message.user_name}
@@ -37,6 +37,7 @@ function buildHTML(message){
               return html;
   };
 }
+
 
   $('.main-chat__bottom__form').on('submit', function(e){
     e.preventDefault();

@@ -126,14 +126,12 @@
         }
       }
     }
-    &__message{
-      margin-top: 12px;
-      &__content{
-        color: #434a54;
-        font-size: 14px;
-      }
-    }
   }
+
+.main-chat__center__box__message__content{
+  color: #434a54;
+  font-size: 14px;
+}
 
   .main-chat__center__box__message{
     margin-top: 12px;

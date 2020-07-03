@@ -13,8 +13,8 @@
   .GroupList
     - current_user.groups.each do |group|
       .GroupList__Group
-      = link_to group_messages_path(group), class: 'Link' do
-        .GroupList__Group__name
-          = group.name
-        .GroupList__Group__message
-          = group.show_last_message
+        = link_to group_messages_path(group), class: 'Link' do
+          .GroupList__Group__name
+            = group.name
+          .GroupList__Group__message
+            = group.show_last_message

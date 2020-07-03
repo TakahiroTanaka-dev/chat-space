@@ -49,7 +49,7 @@ $(function(){
           
         })
         .done(function(messages){
-  
+    
           // このifの処理意味不明すぎるやろforeachじゃダメなの？
           if (messages.length !==0 ){
             let insertHTML='';

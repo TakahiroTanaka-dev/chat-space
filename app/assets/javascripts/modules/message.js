@@ -54,12 +54,13 @@ function buildHTML(message){
     .done(function(data){
       let html=buildHTML(data);
       $('.main-chat__center').append(html);
+      $('form')[0].reset();
       $('.main-chat__center').animate({scrollTop: $('.main-chat__center')[0].scrollHeight});
       $('.main-chat__bottom__form__submit__btn').prop("disabled", false);
-      $('form')[0].reset();
     })
     .fail(function(){
       alert("メッセージ送信に失敗しました");
+      $('.main-chat__bottom__form__submit__btn').prop("disabled", false);
     })
   });
 });
